@@ -46,3 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Scroll Animation for About Page
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".about-section");
+
+    const revealOnScroll = () => {
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < window.innerHeight - 100) {
+                section.classList.add("reveal");
+            }
+        });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Run on load
+});
