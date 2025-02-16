@@ -99,6 +99,13 @@ footer {
     height: auto;
 }
 
+.icon-img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 20px;
+    height: auto;
+}
+
 /* ==========================
    VIDEO CONTAINER 
    ========================== */
