@@ -280,6 +280,14 @@ footer {
     border: 3px solid var(--accent-color);
 }
 
+.education-img-four {
+    width: 180px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+}
+
 /* Text Styling */
 .education-text {
     flex: 1;
@@ -300,6 +308,11 @@ footer {
         width: 150px;
         height: 150px;
     }
+
+    /*.education-img-four {
+        width: 150px;
+        height: 200px;
+    }*/
 }
 
 /*===========================
