@@ -360,6 +360,27 @@ footer {
     border: 3px solid var(--accent-color);
 }
 
+.about-img-169 {
+    width: 200px;
+    height: 354px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-img-23 {
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-img-3 {
+    width: 200px;
+    height: 317px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 .about-text {
     flex: 1;
 }
