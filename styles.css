@@ -346,6 +346,7 @@ footer {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+
 /* Reveal Animation */
 .about-section.reveal {
     opacity: 1;
@@ -358,6 +359,13 @@ footer {
     border-radius: 8px;
     object-fit: cover;
     border: 3px solid var(--accent-color);
+}
+
+.about-img-169 {
+    width: 200px;
+    height: 354px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .about-text {
