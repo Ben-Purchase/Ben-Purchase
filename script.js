@@ -79,3 +79,20 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll(); // Run on load
 });
+
+// Scroll Animation for Project Page
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".project-section"); 
+
+    const revealOnScroll = () => {
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < window.innerHeight - 100) {
+                section.classList.add("reveal");
+            }
+        });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Run on load
+});

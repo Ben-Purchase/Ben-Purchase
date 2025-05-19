@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
 </head>
 <body>
     <header>
         <h1>Projects</h1>
         <nav>
             <ul>
+                <!-- Links to the other pages -->
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../About/about.html">About</a></li>
                 <li><a href="../Education/education.html">Education</a></li>
@@ -21,21 +23,66 @@
     </header>
 
     <section class="content">
-        <h2>Page Under Construction</h2>
-<!--
-        <p>A mobile application that allows users to take snapshots and store them locally.</p>
-        <a href="https://github.com/yourgithub" target="_blank">View on GitHub</a>
-        
-        <div class="video-container">
-            <video controls class="project-video">
-                <source src="../Media/Videos/Video_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <!-- Robot Waiter -->
+        <h2 class="project-title">Robot Waiter - Speech Interpereter</h2>
+        <div class="project-section">
+            <div class="project-text">
+                
+                <p>
+                    At The University of Lincoln my group was taked with a hard task of creating three working parts to a robot waiter of which my part was allocated within our group to work 
+                    on the Speech Interpereter section. This involved planning out how we would tackle this project and starting early, to test the viability of various ideas.
+                </p>
+                <p>
+                    To begin with, the plan was to utilize the recently released local version of <a href="https://www.deepseek.com/" target="_blank">Deepseek AI</a> within a web GUI for ease of acess,
+                    however after a painstaking process of trying to get the smaller, easier to run models working properly (without halucinating/trailing off) we realized we would have to cut 
+                    our losses as the AI just wasn't ready given the combination of models available, hardware available for us to use, and time left. We also didn't want to utilize non-local
+                    models as we didn't want to spend any money. This early version of the project is still <a href="https://github.com/BenPurch/Deepseek-test-for-Robot-Waiter-Speech-Interpereter" target="_blank">on my github</a>.
+                </p>
+                <p>
+                    After the setbacks involved with trying to get the AI version of the speech interpereter working we realised that we needed to take a step back and re-evaluate how to tackle
+                    the problem. We started back from scratch with a command line version of the interpereter that simply understood when specific items were mentioned. From here we could work 
+                    slowly and begin adding other features we needed, such as the ability to save orders, a way for the waiter to give the robot other menu items, and understanding of multiples
+                    of items on the menu (e.g. two pizzas, five chicken). This allowed us time to add further quality of life features such as a GUI using <a href="https://docs.python.org/3/library/tkinter.html" target="_blank">Tkinter</a>,
+                    a way for the waiter to set the number of tables and a page for the customer to select their table, a visual way for the user to edit their order, and a printed reciept for 
+                    the waiter to see the orders as well as the table number and the time of order.
+                </p>
+                <p>
+                    Allough we wanted to, we didn't have enought time left, nor time with the robot itself to fully implement the seperate modules together (allthough this wasn't an issue for the 
+                    project as integration was never required within the project), however we did theorise some ways, which made its way into the report.
+                </p>
+
+                <a href="https://github.com/ImSighted/Speech-Recognition" target="_blank">Speech Interpereter Repo</a><p></p>
+                <a href="https://github.com/jozefbonnar/robot-waiter" target="_blank">Full Robot Waiter Repo</a>
+            </div>
+
+            <div class="video-container">
+                <video controls class="project-video">
+                    <source src="../Media/Videos/How-to-use-Speech_TSE_07-05-2025.mp4" type="video/mp4">
+                    Video Error.
+                </video>
+            </div>
         </div>
-    -->
+
+        <!-- PHP Chat Application -->
+        <h2 class="project-title">PHP Chat Application</h2>
+        <div class="project-section">
+            <div class="project-text">
+                
+                <p>
+                    This is a PHP based chat application using SQLite that runs using a backend service, created as part of a work project as a proof of concept.
+                </p>
+                <p>
+                    This application allows the user to create and join groups, and send messages within the groups.
+                </p>
+
+                <a href="https://github.com/BenPurch/PHP-Chat-Application" target="_blank">PHP Chat App Github</a>
+            </div>
+        </div>
+
     </section>
 
     <footer>
+        <!-- Contact Page -->
         <p>© 2024 Ben Purchase | Email: <a href="../Contact/contact.html">BenPurchase@outlook.com</a></p>
     </footer>
 </body>
